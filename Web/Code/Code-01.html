@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Code </title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            background: linear-gradient(230deg, rgb(69, 11, 86), rgb(79, 129, 255));
+        }
+
+        .Code {
+            position: relative;
+            background: linear-gradient(to bottom, rgb(67, 67, 67), rgb(0, 0, 0));
+            width: 60vw;
+            max-width: 500px;
+
+            color: white;
+            border: 2px solid grey;
+            border-radius: 5px;
+            padding: 20px 0px 5px;
+        }
+        pre {
+            position: relative;
+            left: -40px;
+        }
+
+        h1 { position: relative; 
+            bottom: 30px; 
+            font-family: sans-serif;
+            color: white; 
+        }
+        .gold { color: rgb(241, 217, 80); }
+        .purple { color: rgb(207, 49, 207); }
+        .blue { color: rgb(83, 165, 212); }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1> Code Snippets </h1>
+    <section class="Code">
+        <pre>
+            <span class="gold">body</span> {
+                display: flex;
+                align-items: <span class="purple">center</span>;
+                justify-content: <span class="purple">center</span>;
+                height: <span class="blue">100vh</span>;
+            }
+        </pre>
+    </section>
+
+</body>
+</html>
