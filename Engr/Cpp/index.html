@@ -4,6 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> C++ </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 20px;
+        }
+
+        .Code {
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            color: #afafaf;
+            padding: 5px 10px;
+            width: 90vw;
+            max-width: 750px;
+        }
+        .Code code {
+            margin-bottom: 5px;
+            padding: 0px;
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
 
@@ -15,7 +42,7 @@
             <h3> Problem No. 1 </h3>
             <p> You need to compile this shit, and here's how: </p>
 
-            <div>
+            <div class="Code">
                 <code> g++ -o RunMe Test.cpp </code>
                 <code> ./RunMe </code>
             </div>
