@@ -62,5 +62,39 @@
         <code class="Code"> clang++ main.cpp Functions.cpp </code>
     </section>
     
+    <section>
+        <h3> Problem No. 3 </h3>
+        <p> <b>Basic Strings</b>, you should do as many examples organizing tables and such
+            if you want to get good at strings. </p> </br>
+        <p> Here's some code: </p>
+        <code>
+            <pre> 
+                #include <iostream>
+                    using std::cout;
+                    using std::cin;
+                    
+                    #include <string>
+                    using std::string;
+                    
+                    
+                    int main()
+                    {
+                        string name;
+                        cout << "Who are you?" << '\n';
+                        cin >> name;
+                    
+                        string Greeting = "Hello, " + name;
+                    
+                        if (name == "Kate")
+                        {
+                            Greeting += ", I know you!";
+                        } 
+                            cout << Greeting << '\n';
+                        return 0;
+                    }
+                </pre>
+        </code>
+    </section>
+    
 </body>
 </html>
