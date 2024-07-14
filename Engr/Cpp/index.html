@@ -16,19 +16,23 @@
             padding: 20px;
         }
 
-        .Code {
+        code {
             display: flex;
             flex-direction: column;
-            background-color: black;
-            color: #afafaf;
-            padding: 5px 10px;
+            
             width: 90vw;
             max-width: 750px;
-        }
-        .Code code {
-            margin-bottom: 5px;
-            padding: 0px;
             font-size: 1.2em;
+            padding: 5px 15px;
+            
+            background-color: black;
+            color: #afafaf;   
+        }
+
+        section {
+            background-color: lightgrey;
+            padding: 40px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -48,6 +52,14 @@
             </div>
 
         </div>
+    </section>
+
+    <section>
+        <h3> Problem No. 2 </h3>
+        <p> <b>Header Files</b>, your code in Multiple Files. </p>
+        <p> When you split your code using header files compile like this: </p>
+        <p> Do not include Functions.h when compiling </p>
+        <code class="Code"> clang++ main.cpp Functions.cpp </code>
     </section>
     
 </body>
