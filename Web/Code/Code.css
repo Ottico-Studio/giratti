@@ -15,11 +15,6 @@
             left: -60px;
         }
 
-        h1 { position: relative; 
-            bottom: 30px; 
-            font-family: sans-serif;
-            color: white; 
-        }
         .gold { color: rgb(241, 217, 80); }
         .purple { color: rgb(207, 49, 207); }
         .blue { color: rgb(83, 165, 212); }
