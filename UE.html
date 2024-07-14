@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> UE Demos </title>
+</head>
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+    --color-text: #fff;
+    --color-background: linear-gradient(to right bottom, #ffb88e, #ea5753);
+    --color-container: linear-gradient(to right bottom, 
+                            rgba(255, 184, 142, 0.44), 
+                            rgba(255, 255, 255, 0.5));
+    --color-list: rgba(234, 87, 83, 0.7);
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    height: 100vh;
+    background: var(--color-background);
+    font-family: Roboto ,serif;
+    margin: 0;
+
+    display: grid;
+    place-items: center;
+    }
+
+/* Container styles */
+.container {
+    position: relative;
+    width: 60vw;
+    max-width: 500px;
+
+    padding: 60px;
+    border-radius: 20px;
+    background: var(--color-container);
+    overflow: hidden;
+
+    /* Circles go as part of .Container because we need the hidden overflow */
+    &::before { /* Top Left */
+        content: "";
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: rgba(255,255,255, 0.3);
+
+        top: -120px;
+        left: -200px;
+    }
+
+    &::after { /* Bottom Right */
+        content: "";
+        position: absolute;
+        bottom: 0rem;
+        right: -10rem;
+        margin-bottom: -25rem;
+
+        width: 40rem;
+        height: 40rem;
+        border-radius: 50%;
+        background: rgba(255, 185, 142, 0.5);
+        z-index: -1;
+    }
+}
+
+
+    /* Heading styles */
+    h1 {
+        position: relative;
+        margin: 0;
+        top: -20px;
+        text-align: center;
+        color: var(--color-text);
+        padding: 35px;
+        margin-bottom: 20px;
+        box-shadow: 0 7px 2rem #ea5753;
+        background: rgba(234, 87, 83, 0.7);
+    }
+
+    /* List styles */
+    ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        display: flex;
+        gap: 10px;
+        place-items: center;
+        flex-direction: column;
+    }
+    
+    li {    color: var(--color-text);
+            border-radius: 3rem;
+            background: var(--color-list);
+            padding: 20px 30px;
+            width: 200px;
+            text-align: center;
+            font-size: 1.3em;
+
+            counter-increment: count;
+            /* Counter for list-items */
+            &::before {
+                content: counter(count) ". ";
+            }
+        }
+
+</style>
+
+
+<body>
+    <div class="container">
+        <h1>Unreal Engine</h1>
+        <ol>
+            <li> FPS </li>
+            <li> Roman Temple </li>
+            <li> Bunker House </li>
+            <li> Shiva Cave </li>
+        </ol>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Demos </title>
+
+    <style>
+
+        :root {
+            --DrkGreen: #0e2730;
+            --DrkGreenHover: #286a82;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+
+        body {
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        ul li {
+            position: relative;
+            background-color: rgb(43,43,43);
+            width: 200px;
+            height: 35px;
+            border-radius: 5px;
+
+            display: flex;
+            align-items: center;
+            margin: 1.5em;
+            padding: 1em;
+            cursor: pointer;
+            color: whitesmoke;
+        }
+
+        ul li::before,
+        ul li::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            border-radius: 5px;
+            width: 104%;
+            transition: all 0.4s;
+        }
+
+        ul li::before {
+            left: 0%;
+            height: 130%;
+            background: linear-gradient(to right, #021b79, #0575e6);
+        }
+        ul li::after {
+            left: -10%;
+            height: 130%;
+            background-color: rgb(145, 65, 191);
+            background: #ffffff56;
+            box-shadow: 0 0 20px rgba(0,0,0, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Hover */
+        ul li:hover::before {
+            transform: translateX(-2.5%);
+        }
+        ul li:hover::after {
+            transform: translateX(12.5%);
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <section class="Box">
+        <div class="Container">
+            <ul>
+                <a href="UE"> </a><li> Unreal </li> </a>
+                <a href="Unity"> </a><li> Unity </li> </a>
+                <a href="www"> </a><li> Web Demos </li> </a>
+                <a href="#"> </a><li> Blender Render </li> </a>
+                <a href="#"> </a><li> AR/VR </li> </a>
+                <a href="#"> </a><li> Qt (C++ / Python) </li> </a>
+            </ul>
+        </div>
+    </section>
+
+
+</body>
+</html>
