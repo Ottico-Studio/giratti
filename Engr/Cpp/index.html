@@ -24,9 +24,13 @@
             max-width: 750px;
             font-size: 1.2em;
             padding: 5px 15px;
-            
+            margin-bottom: 20px;
             background-color: black;
             color: #afafaf;   
+        }
+        pre {
+            position: relative;
+            left: -130px;
         }
 
         section {
@@ -38,18 +42,21 @@
 </head>
 <body>
 
+    <h1> Journey through C++ </h1>
+    
     <section>
         <div>
-            <h1> Journey through C++ </h1>
             <p> Here's where we start, you got some code and now how do you actually run it? </p>
             
             <h3> Problem No. 1 </h3>
             <p> You need to compile this shit, and here's how: </p>
 
-            <div class="Code">
-                <code> g++ -o RunMe Test.cpp </code>
-                <code> ./RunMe </code>
-            </div>
+            <code>
+                <pre>
+                    g++ -o RunMe Test.cpp
+                    ./RunMe
+                </pre> 
+            </code>
 
         </div>
     </section>
@@ -59,7 +66,7 @@
         <p> <b>Header Files</b>, your code in Multiple Files. </p>
         <p> When you split your code using header files compile like this: </p>
         <p> Do not include Functions.h when compiling </p>
-        <code class="Code"> clang++ main.cpp Functions.cpp </code>
+        <code> clang++ main.cpp Functions.cpp </code>
     </section>
     
     <section>
@@ -94,7 +101,21 @@
                     }
                 </pre>
         </code>
+        <code>
+            <pre>
+                Who are you?
+                Kate
+                Hello, Kate, I know you!
+            </pre>
+        </code>
     </section>
     
+
+    <section>
+        <div>
+            <h3> Pointers & Memory</h3>
+        </div>
+    </section>
+
 </body>
 </html>
