@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Auto Bg Changer </title>
+</head>
+<body>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            border: 2px solid #333;
+        }
+        .color {
+            display: table-cell;
+            width: 50px;
+            height: 50px;
+            margin: 0 1px;
+            cursor: pointer;
+            border: 2px solid #fff;
+        }
+        .clr1 { background-color: #9b0fdb; }
+        .clr2 { background-color: gold; }
+        .clr3 { background-color: #04db53; }
+        .clr4 { background-color: #0f68db; }
+    </style>
+
+    <div class="container">
+        <span id="1" onclick="color(this)" class="color clr1"> </span>
+        <span id="2" onclick="color(this)" class="color clr2"> </span>
+        <span onclick="color(this)" class="color clr3"></span>
+        <span onclick="color(this)" class="color clr4"></span>
+    </div>
+    
+</body>
+</html>
+
+
+<!-- https://www.youtube.com/watch?v=UUJXTsNdDAE -->
+ 

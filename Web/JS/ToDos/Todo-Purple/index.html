@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ToDo List Purple </title>
+    <link rel="stylesheet" href="purple.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1> My To Do List </h1>
+    </header>
+
+    
+    <form action="">
+        <input type="text" class="todo-input">
+        <button class="todo-button" type="submit">
+            <i class="fas fa-plus-circle fa-lg"></i>
+        </button>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all"> All </option>
+                <option value="completed"> Completed </option>
+                <option value="incomplete"> Incomplete </option>
+            </select>
+        </div>
+    </form>
+    
+
+    <div class="todo-container">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
